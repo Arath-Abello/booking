@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap');
+
+html{
+    position: relative;
+}
+.sombra{
+    background-color: rgba(0, 0, 0, .9);
+}
+.popup{
+    position: absolute;
+    z-index: 2;
+    width: 98%;
+    background-color: white;
+    border-radius: 1.25em 1.25em 0 0;
+    padding: 1em;
+    display: none;
+}
+.mostrar{
+    bottom: 8%;
+    display: block;
+}
+.ocultar{
+    display: none;
+}
+.cerrar{
+    background-color: transparent;
+    border: 0;
+    margin-left: 90%;
+    cursor: pointer;
+}
+.sec1Evento, .sec2Evento{
+    opacity: .2;
+}
+.dFlex{
+    display: flex;
+    gap: 1em;
+    margin-bottom: 2em;
+}
+.moreInfo{
+    text-align: center;
+    display: block;
+    padding: 1em 2em;
+    background-color: #5E81F7;
+    color: white;
+    border-radius: .625em;
+    font-family: 'inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    border: 0;
+    width: 100%;
+    margin-bottom: 2em;
+}
+.moreInfo2{
+    text-align: center;
+    display: block;
+    width: 100%;
+    font-family: 'inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: black;
+}
+.h2Info, .pInfo{
+    font-family: 'inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.pInfo{
+    font-size: .875rem;
+    color: #747474;
+}
+.infLocation{
+    display: flex;
+    flex-direction: column;
+}
+.locationReverse, .locationReverse2{
+    flex-direction: column-reverse;
+}
+.popupDetails{
+   background: transparent;
+   border: 0; 
+   height: 17px;
+}

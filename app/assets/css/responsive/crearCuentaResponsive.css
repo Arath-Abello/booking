@@ -1,0 +1,19 @@
+@media screen and (min-width: 992px) and (max-width: 1930px){
+    .barraProgreso{
+        width: 90%;
+        justify-content: space-around;
+    }
+    .separador{
+        width: 500px;
+    }
+    .dFlex{
+        display: flex;
+        gap: 1em;
+    }
+    .sec2{
+        width: 600px;
+    }
+    .progreso p:nth-child(2), .progreso1 p:nth-child(2){
+        font-size: 1rem;
+    }
+}

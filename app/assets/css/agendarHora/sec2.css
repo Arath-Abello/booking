@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap');
+
+.sec2{
+    width: 360px;
+    margin: 0 auto;
+}
+.headerSec2{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.headerSec2 h2{
+    font-size: 1rem;
+    font-family: 'inter', sans-serif;
+    font-weight: 500;
+}
+.sec2Location{
+    width: 360px;  
+    margin: 1em auto;
+    background-color: white;
+    border-radius: .625em;
+    border: 1px solid #E2E2E2;
+    padding: 1em;
+    display: flex;
+    gap: 1em;
+}
+.d-block{
+    display: block;
+    color: black;
+    font-family: 'inter', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+}
+.iconos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.iconsReverse, .iconsReverse2{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+.p-relative{
+    position: relative;
+}
+.p-absolute{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.d-flex{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.linea{
+    width: 225px;
+    border: 1px solid #E2E2E2;
+}
+.flechas{
+    background-color: transparent;
+    border: 0;
+}
+
+.form, .articleSec2Flex{
+    display: flex;
+    justify-content: space-between;
+}
+.articleSec2{
+    margin-bottom: 2em;
+}
+.formReturn{
+    margin-bottom: 6em;
+}
+.inputForm, #date{
+    width: 174px;
+    height: 55px;
+    border-radius: .625em;
+    border: 1px solid #E2E2E2;
+    padding: 1em;
+    margin-top: 1em;
+}
+.d-flexform{
+    display: flex;
+    gap: 1em;
+}
+.pLocation{
+    color: #747474;
+    font-size: .9375rem;
+    font-weight: 500;
+    font-family: 'inter', sans-serif;
+}
+.spanDetails{
+    display: block;
+    height: 0;
+}
+.labelFormInfDate, .labelFormInfTime{
+    font-family: 'inter', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+}
+#date, input[type="time"]{
+    margin-top: 1em;
+    cursor: pointer;
+}
+.h3ArticleSec2, .pArticleSec2{
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'inter', sans-serif;
+}
+.contentSeleccion, .contentSeleccionado{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: flex-end;
+   width: 174px;
+   border: 1px solid #E2E2E2;
+   border-radius: .625em;
+   padding: 1em;
+   cursor: pointer;
+   background-color: white;
+   height: 82px;
+   position: relative;
+}
+.colorBtnSeleccion{
+    border: 1px solid #5E81F7;
+}
+.contentSeleccion img{
+    width: 47px;
+    height: 21px;
+}
+.descuento{
+    color: #FF4E4E;
+    font-family: 'inter', sans-serif;
+    font-weight: 600;
+    font-size: .875rem;
+}
+.findVehicle{
+    text-align: center;
+    background-color: #5E81F7;
+    font-size: 1rem;
+    font-family: 'inter', sans-serif;
+    font-weight: 700;
+    display: block;
+    text-decoration: none;
+    padding: 1em 2em;
+    border-radius: .625rem;
+    color: white;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator, input[type="time"]::-webkit-calendar-picker-indicator{
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 2px;
+    color: blue;
+}
+
+
+.btnIdioma{
+    padding: 1em 2em;
+    width: 150px;
+}
+
+#calendario {
+    width: 300px;
+    font-family: Arial, sans-serif;
+    display: block;
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    display: none;
+    padding: 1em 0;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: .625em;
+  }
+  
+  .dias-semana {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: .625em;
+    font-size: .5625rem;
+  }
+  
+  .dias {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+  }
+  
+  .dias div {
+    text-align: center;
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .dias div:hover {
+    background-color: #f2f2f2;
+  }
+
+.hora{
+    text-align: center;
+}
+.pHora{
+    font-size: 1rem;
+}
+.contenHora{
+    margin-top: 1em;
+    background-color: #EE7E27;
+}
+
+

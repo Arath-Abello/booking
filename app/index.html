@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html id="sombra">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar hora</title>
+    <link rel="stylesheet" href="assets/css/agendarHora/barraProgreso.css">
+    <link rel="stylesheet" href="assets/css/agendarHora/toggle.css">
+    <link rel="stylesheet" href="assets/css/agendarHora/sec1.css">
+    <link rel="stylesheet" href="assets/css/agendarHora/sec2.css">
+    <link rel="stylesheet" href="assets/css/agendarHora/explicacionHora.css">
+    <link rel="stylesheet" href="assets/css/responsive/responsive.css">
+    <link rel="stylesheet" href="assets/css/agendarHora/en/en.css">
+    <link rel="stylesheet" href="assets/css/agendarHora/es-ES/es-ES.css">
+    <link rel="stylesheet" href="assets/css/agendarHora/pt/pt.css">
+    <link rel="stylesheet" href="assets/js/jquery/jquery-ui.min.css">
+    <link rel="stylesheet" href="assets/js/jquery/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="assets/js/jquery/jquery-ui.theme.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="assets/js/moment.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/i18next@21.6.10/i18next.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-i18next@1.2.1/jquery-i18next.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+
+
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/i18next-browser-languagedetector/7.1.0/i18nextBrowserLanguageDetector.min.js"></script>
+
+    <script src="assets/js/i18nIndex.js"></script>
+
+
+
+</head>
+
+<body>
+    <main>
+        <section id="sec1">
+            <header class="headerSec1">
+                <h1 data-i18n="progressBar.title">Request Quote</h1>
+            </header>
+
+            <div class="barraProgreso">
+                <div class="progreso1">
+                    <p>1</p>
+                    <p data-i18n="progressBar.route">Route</p>
+                </div>
+                <div class="separador"></div>
+                <div class="progreso">
+                    <p>2</p>
+                    <p data-i18n="progressBar.vehicle">Vehicle</p>
+                </div>
+                <div class="separador"></div>
+                <div class="progreso">
+                    <p>3</p>
+                    <p data-i18n="progressBar.details">Details</p>
+                </div>
+                <div class="separador"></div>
+                <div class="progreso">
+                    <p>4</p>
+                    <p data-i18n="progressBar.payment">Payment</p>
+                </div>
+            </div>
+        </section>
+        <div class="dgridMain">
+            <div class="sec2" id="sec2">
+                <header class="headerSec2">
+                    <h2 data-i18n="route.title">Select route</h2>
+                    <div class="toggle">
+                        <div>
+                            <label for="fromAirport" class="label1" id="label1" data-i18n="route.from">From
+                                Airport</label>
+                            <input type="checkbox" id="fromAirport" name="toggle">
+                        </div>
+                        <div>
+                            <label for="toAirport" class="labelToAirport" id="label2" data-i18n="route.to">To
+                                Airport</label>
+                            <input type="checkbox" id="toAirport" name="toggle">
+                        </div>
+                        <span class="slider" id="slider"></span>
+                    </div>
+                </header>
+
+                <div class="sec2Location">
+                    <div class="iconos" id="iconos">
+                        <div>
+                            <img src="assets/img/location-pin.png" alt="">
+                        </div>
+                        <div>
+                            <img src="assets/img/dashed.png" alt="">
+                        </div>
+                        <div class="p-relative">
+                            <img src="assets/img/vector.png" alt="">
+                            <img class="p-absolute" src="assets/img/linea.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="infLocation" id="infLocation">
+                        <div class="locationColumn">
+                            <span class="d-block" data-i18n="location.currentLocation">Current location</span>
+                            <p class="pLocation" data-i18n="location.from">From</p>
+                        </div>
+                        <div class="d-flex">
+                            <div class="linea"></div>
+                            <button class="flechas" id="flechas">
+                                <img src="assets/img/flechas.png" alt="">
+                            </button>
+                        </div>
+                        <div class="locationColumn">
+
+                            <span class="d-block" data-i18n="location.InternationalAirport">John F. Kennedy
+                                International Airport</span>
+                            <p class="pLocation" data-i18n="location.to">To</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contentDate">
+                    <form class="form formDate" id="formDate">
+                        <div>
+                            <label class="labelFormInfDate" for="date" data-i18n="formDate.dateTitle">Departure
+                                Date</label>
+
+                            <div id="date">14/08/2023</div>
+
+                            <div id="calendario">
+                                <article class="header">
+                                    <button id="anterior">&lt;</button>
+                                    <h2 id="mes"></h2>
+                                    <button id="siguiente">&gt;</button>
+                                </article>
+                                <div class="dias-semana">
+                                    <div>Domingo</div>
+                                    <div>Lunes</div>
+                                    <div>Martes</div>
+                                    <div>Miércoles</div>
+                                    <div>Jueves</div>
+                                    <div>Viernes</div>
+                                    <div>Sábado</div>
+                                </div>
+                                <div class="dias"></div>
+                                <div class="hora">
+                                    <div class="contenHora">
+                                        <p class="pHora">Selecciona una hora</p>
+                                       
+                                    </div>
+                                    <input type="time" id="horaInput" class="horaInput" value="">
+
+                                    <button id="done">Done</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div>
+                            <div class="d-flexform">
+                                <label class="labelFormInfTime" for="time" data-i18n="formDate.timeTitle">Departure
+                                    Time</label>
+                                <button class="popupDetails" id="popupDetails"><img src="assets/img/details.png"
+                                        alt=""></button>
+                            </div>
+                            <input class="inputForm" type="time" name="departureTime" id="maintime" value="">
+                        </div>
+
+                    </form>
+
+                    <article class="articleSec2">
+                        <header>
+                            <h3 class="h3ArticleSec2" data-i18n="selectionTrip.select">Select trip</h3>
+                        </header>
+
+                        <div class="articleSec2Flex">
+                            <button class="contentSeleccionado btnSelection">
+                                <img src="assets/img/flecha2.png" alt="">
+                                <span class="pArticleSec2" data-i18n="selectionTrip.btn1">One way</span>
+                            </button>
+
+                            <button class="contentSeleccion btnSelection">
+                                <img src="assets/img/flecha3.png" alt="">
+                                <span class="pArticleSec2" data-i18n="selectionTrip.btn2">Round trip</span>
+                                <span class="descuento" data-i18n="selectionTrip.discount">5% discount</span>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+
+                <form action="#" class="formReturn form">
+                    <div>
+                        <label class="labelFormInfDate" for="rdate" data-i18n="return.rDate">Return Date</label>
+                        <input class="inputForm" type="date" name="departureDate" id="rdate" value="2023-12-03">
+                    </div>
+                    <div>
+                        <div class="d-flexform">
+                            <label class="labelFormInfTime" for="rtime" data-i18n="return.rTime">Return Time</label>
+                            <button class="popupDetails"><img src="assets/img/details.png" alt=""></button>
+                        </div>
+                        <input class="inputForm" type="time" name="departureTime" id="rtime" value="09:30">
+                    </div>
+                </form>
+
+                <a href="servicios.html" class="findVehicle" data-i18n="find.vehicle">Find vehicle</a>
+                <button id="eeuu" class="btnIdioma">
+                    Unite state
+                </button>
+
+                <button id="spain" class="btnIdioma">
+                    spain
+                </button>
+
+                <button id="br" class="btnIdioma">
+                    portuguese
+                </button>
+            </div>
+        </div>
+
+
+        <div class="popup" id="popup">
+            <button id="cerrar" class="cerrar"><img src="assets/img/cerrar.png" alt=""></button>
+            <div class="dFlex">
+                <div>
+                    <img src="assets/img/taxi-van1.png" alt="">
+                </div>
+                <article>
+                    <header>
+                        <h2 class="h2Info" data-i18n="popup.title1">Van Arrival</h2>
+                    </header>
+                    <p class="pInfo" data-i18n="popup.info1">This is the time at which you want the Van
+                        to arrive home or your flight arrival time.</p>
+                </article>
+            </div>
+
+            <div class="dFlex">
+                <div>
+                    <img src="assets/img/plane-line1.png" alt="">
+                </div>
+                <article>
+                    <header>
+                        <h2 class="h2Info" data-i18n="popup.title2">Airport Departures</h2>
+                    </header>
+                    <p class="pInfo" data-i18n="popup.info2">For departures from the airport, we will wait
+                        for you regardless if your flight is delayed.</p>
+                </article>
+            </div>
+
+
+            <div class="dFlex">
+                <div>
+                    <img src="assets/img/timer1.png" alt="">
+                </div>
+                <article>
+
+                    <header>
+                        <h2 class="h2Info" data-i18n="popup.title3">Plan Your Time</h2>
+                    </header>
+                    <p class="pInfo" data-i18n="popup.info3">Please plan your pickup time to arrive to the
+                        airport with adequate time to do airport tasks.</p>
+                </article>
+            </div>
+
+            <div class="dFlex">
+                <div>
+                    <img src="assets/img/card-travel1.png" alt="">
+                </div>
+                <article>
+
+                    <header>
+                        <h2 class="h2Info" data-i18n="popup.title4">Travel Times</h2>
+                    </header>
+                    <p class="pInfo" data-i18n="popup.info4">Travel times normally take 40 minutes for
+                        Exclusive transports and 1 hours 20 min for
+                        shared transports.</p>
+                </article>
+            </div>
+
+            <button class="moreInfo" data-i18n="moreInfo.close">
+                Close & continue purchase
+            </button>
+
+            <a href="#" class="moreInfo2" data-i18n="moreInfo.terms">
+                Check our Terms & Conditions
+            </a>
+        </div>
+
+
+    </main>
+
+    <script src="assets/js/expliacionHora.js"></script>
+    <script src="assets/js/toggle.js"></script>
+    <script src="assets/js/selectionTrip.js"></script>
+
+    <script src="assets/js/calendario.js"></script>
+</body>
+
+</html>

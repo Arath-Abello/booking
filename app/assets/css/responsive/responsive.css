@@ -1,0 +1,127 @@
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .barraProgreso {
+        width: 90%;
+        justify-content: space-around;
+    }
+
+    .separador {
+        width: 500px;
+    }
+
+    .toggle {
+        width: 230px;
+    }
+
+    .sec2 {
+        width: 600px;
+    }
+
+    .sec2Location {
+        width: auto;
+    }
+
+    .linea {
+        width: 450px;
+    }
+
+    .pLocation {
+        text-align: center;
+    }
+
+    .labelFormInfDate {
+        display: block;
+    }
+
+    .d-block {
+        text-align: center;
+    }
+
+    .locationColumn {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .progreso p:nth-child(2),
+    .progreso1 p:nth-child(2) {
+        font-size: 1rem;
+    }
+
+    .contentDate,
+    .formReturn {
+        width: 390px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .findVehicle {
+        width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1930px) {
+    .barraProgreso {
+        width: 90%;
+        justify-content: space-around;
+    }
+
+    .separador {
+        width: 500px;
+    }
+
+    .toggle {
+        width: 230px;
+    }
+
+    .sec2 {
+        width: 600px;
+    }
+
+    .sec2Location {
+        width: auto;
+    }
+
+    .linea {
+        width: 450px;
+    }
+
+    .pLocation {
+        text-align: center;
+    }
+
+    .labelFormInfDate {
+        display: block;
+    }
+
+    .d-block {
+        text-align: center;
+    }
+
+    .locationColumn {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 1em;
+    }
+
+    .progreso p:nth-child(2),
+    .progreso1 p:nth-child(2) {
+        font-size: 1rem;
+    }
+
+    .contentDate,
+    .formReturn {
+        width: 390px;
+    }
+
+    .findVehicle {
+        width: 360px;
+    }
+
+    .dgridMain {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

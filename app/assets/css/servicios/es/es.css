@@ -1,0 +1,21 @@
+@media screen and (min-width: 992px) and (max-width: 1930px) {
+    body.es-ES {
+        & .btnSeleccion:first-child {
+            position: relative;
+            & .pAbsolute{
+                font-size: .65rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 420px) and (max-width: 990px) {
+    body.es-ES {
+        & .btnSeleccion:first-child {
+            position: relative;
+            & .pAbsolute{
+                font-size: .65rem;
+            }
+        }
+    }
+}

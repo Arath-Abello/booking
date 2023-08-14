@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congratulations</title>
+    <link rel="stylesheet" href="assets/css/congratulations/congratulations.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/i18next@21.6.10/i18next.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-i18next@1.2.1/jquery-i18next.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/i18next-browser-languagedetector/7.1.0/i18nextBrowserLanguageDetector.min.js"></script>
+
+    <script src="assets/congratulations/js/i18nCongrat.js"></script>
+</head>
+
+<body>
+    <main>
+        <section class="sec1">
+            <header class="headerSec1">
+                <h1 data-i18n="congrat.title">Congratulations!</h1>
+            </header>
+            <p class="info" data-i18n="congrat.infoCongrat">Your purchase was successfully booked.</p>
+
+            <article>
+                <header>
+                    <img src="assets/img/chat.png" alt="">
+                    <h3 data-i18n="congrat.title2">Confirmation message</h3>
+                </header>
+                <p data-i18n="congrat.pInfoTicket">Your ticket ID is 13990. We sent you a confirmation
+                    email to <span class="black">demo@gmail.com</span>, please check your Spam
+                    folder if you don't find it.</p>
+                <p>
+                <p data-i18n="congrat.pInfoSms">We also sent a confirmation SMS to <span class="black">+1 888 5544</span>.</p>
+                </p>
+            </article>
+
+            <article>
+                <header>
+                    <img src="assets/img/flechasAzules2.png" alt="">
+                    <h3 data-i18n="congrat.title3">Keep in touch</h3>
+                </header>
+                <p data-i18n="congrat.pInfoTouch">When your trip's time comes closer, Check your
+                    Phone! We will keep in touch with you and notify you
+                    via SMS on the following instances:</p>
+                <ul>
+                    <li data-i18n="congrat.listTouch1">When a driver is assigned to you. For your convenience,
+                        he may also call you.</li>
+                    <li data-i18n="congrat.listTouch2">When the driver is on his way.</li>
+                    <li data-i18n="congrat.listTouch3">When the driver is outside your home.</li>
+                </ul>
+            </article>
+
+            <article>
+                <header>
+                    <img src="assets/img/audifonos.png" alt="">
+                    <h3 data-i18n="congrat.title4">Customer Support</h3>
+                </header>
+                <ul>
+                    <li data-i18n="congrat.listTouch4">If you need to modify your trip, please contact us at 
+                        <span class="black">demo@gmail.com</span></li>
+                    <li data-i18n="congrat.listTouch5">Make sure you hold all of your belongings before 
+                        abandoning the bus.</li>
+                    <li data-i18n="congrat.listTouch6">Cancellations need to be communicated within 4-hour 
+                        minimum anticipation.</li>
+                </ul>
+            </article>
+
+            <a href="resumen.html" class="goToDashboard" data-i18n="congrat.dashboard">Go to dashboard</a>
+        </section>
+
+        <button id="eeuu">
+            Unite state
+        </button>
+
+        <button id="spain">
+            spain
+        </button>
+
+        <button id="br">
+            portuguese
+        </button>
+
+    </main>
+</body>
+
+</html>

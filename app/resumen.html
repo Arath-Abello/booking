@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumen</title>
+    <link rel="stylesheet" href="assets/css/resumen/barraProgreso.css">
+    <link rel="stylesheet" href="assets/css/resumen/form.css">
+
+    <link rel="stylesheet" href="assets/css/responsive/responsiveResumen.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/i18next@21.6.10/i18next.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-i18next@1.2.1/jquery-i18next.min.js"></script>
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/i18next-browser-languagedetector/7.1.0/i18nextBrowserLanguageDetector.min.js"></script>
+
+<script src="assets/resumen/js/i18nResumen.js"></script>
+
+</head>
+
+<body>
+    <main>
+        <section id="sec1" class="sec1">
+            <header class="headerSec1">
+                <h1 data-i18n="progressBar.title">Request Quote</h1>
+            </header>
+
+            <div class="barraProgreso">
+                <div class="progreso">
+                    <p>1</p>
+                    <p data-i18n="progressBar.route">Route</p>
+                </div>
+                <div class="separador"></div>
+                <div class="progreso">
+                    <p>2</p>
+                    <p data-i18n="progressBar.vehicle">Vehicle</p>
+                </div>
+                <div class="separador"></div>
+                <div class="progreso">
+                    <p>3</p>
+                    <p data-i18n="progressBar.details">Details</p>
+                </div>
+                <div class="separador"></div>
+                <div class="progreso">
+                    <p>4</p>
+                    <p data-i18n="progressBar.payment">Payment</p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <form class="form">
+            <div>
+                <label for="code" class="discount" data-i18n="code.code">Discount code</label>
+                <div class="dFlex">
+                    <input type="number" name="discountCode" placeholder="1456792" id="code">
+                    <button class="btnApply" data-i18n="code.apply">Apply</button>
+                </div>
+            </div>
+            
+            <div class="sec2Location">
+                <div class="iconos" id="iconos">
+                    <div>
+                        <img src="assets/img/location-pin.png" alt="">
+                    </div>
+                    <div>
+                        <img src="assets/img/dashed.png" alt="">
+                    </div>
+                    <div class="p-relative">
+                        <img src="assets/img/vector.png" alt="">
+                        <img class="p-absolute" src="assets/img/linea.png" alt="">
+                    </div>
+                </div>
+
+                <div class="infLocation" id="infLocation">
+                    <p class="pLocation" data-i18n="location.from">From</p> <span class="d-block" data-i18n="location.current">Current location</span>
+                    <p class="pLocation" data-i18n="location.to">To</p> <span class="d-block" data-i18n="location.airport">John F. Kennedy International Airport</span>
+                </div>
+            </div>
+
+            <div class="dgrid">
+                <div>
+                    <img src="assets/img/calendario.png" alt="">
+                    <p data-i18n="dep.date">Dep date</p>
+                    <p data-i18n="dep.mar11">11 Mar 2023</p>
+                </div>
+                <div>
+                    <img src="assets/img/reloj.png" alt="">
+                    <p data-i18n="dep.time">Dep time</p>
+                    <p data-i18n="dep.am12">12:15 am</p>
+                </div>
+                <div>
+                    <img src="assets/img/flechasazules.png" alt="">
+                    <p data-i18n="dep.trip">Trip</p>
+                    <p data-i18n="dep.rTrip">Round trip</p>
+                </div>
+                <div>
+                    <img src="assets/img/autoFrontal.png" alt="">
+                    <p data-i18n="dep.service">Service</p>
+                    <p data-i18n="dep.exclusive">Exclusive</p>
+                </div>
+                <div>
+                    <img src="assets/img/calendario.png" alt="">
+                    <p data-i18n="dep.rtnDate">Rtn date</p>
+                    <p data-i18n="dep.mar12">12 Mar 2023</p>
+                </div>
+                <div>
+                    <img src="assets/img/reloj.png" alt="">
+                    <p data-i18n="dep.rtnTime">Rtn time</p>
+                    <p data-i18n="dep.am9">09:30 am</p>
+                </div>
+                <div>
+                    <img src="assets/img/personas.png" alt="">
+                    <p data-i18n="dep.passengers">Passengers</p>
+                    <p>3</p>
+                </div>
+                <div>
+                    <img src="assets/img/notas.png" alt="">
+                    <p data-i18n="dep.notes">Notes</p>
+                    <p>- - -</p>
+                </div>
+            </div>
+
+            <div class="dflexImagenes">
+                <img src="assets/img/Ellipsegray.png" alt="">
+                <img src="assets/img/Linedashed.png" alt="">
+                <img src="assets/img/Ellipsegray.png" alt="">
+            </div>
+
+            <div class="contentPrecio">
+                <div class="precio">
+                    <p data-i18n="price.ticket">Ticket</p>
+                    <p>$100.00</p>
+                </div>
+
+                <div class="descuento">
+                    <p data-i18n="price.discount">Discount</p>
+                    <p>(-) $5.00</p>
+                </div>
+
+                <div class="lineaSeparador"></div>
+
+                <div class="total">
+                    <p>Total</p>
+                    <p>$95.00</p>
+                </div>
+            </div>
+
+            <a href="#" class="back" data-i18n="btn.back">Back</a>
+            <button type="submit" class="continue" data-i18n="btn.continue">Continue to pay</button>
+        </form>
+
+        <button id="eeuu">
+            Unite state
+        </button>
+
+        <button id="spain">
+            spain
+        </button>
+
+        <button id="br">
+            portuguese
+        </button>
+
+    </main>
+</body>
+
+</html>

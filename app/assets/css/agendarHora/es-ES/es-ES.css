@@ -1,0 +1,28 @@
+@media screen and (min-width: 992px) and (max-width: 1930px){
+    body.es-ES{
+        & .slider{
+            width: 114px;
+        }
+        & .toAirport {
+            transform: translate(110%);
+        }
+        & .pAbsolute{
+            font-size: .65rem;
+        }
+    }
+}
+
+@media screen and (min-width: 420px) and (max-width: 990px) {
+    body.es-ES{
+        & .pAbsolute{
+            font-size: .60rem;
+            width: 100%;
+        }
+    }
+}
+
+    body.es-ES .toggle div label{
+        font-size: .6875rem;
+    }
+    
+    

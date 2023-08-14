@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="assets/css/logueo/log.css">
+    <link rel="stylesheet" href="assets/css/responsive/loginResponsive.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/i18next@21.6.10/i18next.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-i18next@1.2.1/jquery-i18next.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/i18next-browser-languagedetector/7.1.0/i18nextBrowserLanguageDetector.min.js"></script>
+
+    <script src="assets/login/js/i18nLogin.js"></script>
+</head>
+<body>
+    <main>
+        <section id="sec1" class="sec1">
+            <header class="headerSec1">
+                <h1 data-i18n="progressBar.title">Create an account</h1>
+            </header>
+
+            <div class="barraProgreso">
+                <div class="progreso">
+                    <p>1</p>
+                    <p data-i18n="progressBar.route">Route</p>
+                </div>
+                <div class="separador"></div>
+                <div class="progreso">
+                    <p>2</p>
+                    <p data-i18n="progressBar.vehicle">Vehicle</p>
+                </div>
+                <div class="separador"></div>
+                <div class="progreso">
+                    <p>3</p>
+                    <p data-i18n="progressBar.details">Details</p>
+                </div>
+                <div class="separador"></div>
+                <div class="progreso">
+                    <p>4</p>
+                    <p data-i18n="progressBar.payment">Payment</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="sec2">
+            <header>
+                <h2 class="sec2h2" data-i18n="log.loginTitle">Login</h2>
+            </header>
+            
+                <p class="sec2p" data-i18n="log.pinfoLogin">Have you travelled with us before? If so, you 
+                    can log in with your email.</p>
+           
+            <form class="form">
+                <label for="email" data-i18n="log.email">Email</label>
+                <div class="pRelative">   
+                    <img class="imgCorreo" src="assets/img/correo.png" alt="">
+                    <input type="email" name="email" id="email" placeholder="Robertdelgado555@abc.com">
+                </div>
+
+                <label for="password" data-i18n="log.pass">Password</label>
+                <div class="pRelative">
+                    <img class="imgCandado" src="assets/img/candado.png" alt="">
+                    <input type="password" name="password" id="password" placeholder="*******">
+                    <img class="visualizar" src="assets/img/visualizar.png" alt="">
+                </div>
+                <a href="#" class="password" data-i18n="log.passForgot">Forgot your password?</a>
+
+                <a href="crear-cuenta.html" class="back" data-i18n="log.back">Back</a>
+                <button type="submit" class="login" data-i18n="log.login">Login</button>
+            </form>
+
+        </section>
+
+        <button id="eeuu">
+            Unite state
+        </button>
+
+        <button id="spain">
+            spain
+        </button>
+
+        <button id="br">
+            portuguese
+        </button>
+    </main>
+</body>
+</html>

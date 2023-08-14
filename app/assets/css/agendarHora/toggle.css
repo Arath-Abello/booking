@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap');
+
+input[type="checkbox"]{
+  display: none;
+}
+.toggle{
+  width: 200px;
+  border-radius: 14px;
+  border: 1px solid #E2E2E2;
+  height: 35px;
+  line-height: 35px;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1em;
+  overflow: hidden; /*por que se sale un poco el fondo azul y lo ocultamos esa parte que sale*/
+}
+.toggle div label{
+  font-size: .75rem;
+  font-family: 'inter', sans-serif;
+  font-weight: 600;
+}
+.slider{
+  display: block;
+  width: 55%;
+  background-color: #5E81F7;
+  height: 35px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 14px;
+  z-index: -1;
+  transition: all 400ms;
+}
+
+.label1{
+  color: white;
+}
+.labelToAirport{
+  color: #747474;
+}
+.toAirport{
+  transform: translate(100%);
+}
+.colorLabel1{
+  color: #747474;
+}
+.colorLabel2{
+  color: white;
+}
+.locationColumn{
+  display: flex;
+  flex-direction: column-reverse;
+}

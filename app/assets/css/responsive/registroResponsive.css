@@ -1,0 +1,35 @@
+@media screen and (min-width: 992px) and (max-width: 1930px) {
+    .barraProgreso{
+        width: 90%;
+        justify-content: space-around;
+    }
+    .separador{
+        width: 500px;
+    }
+    .progreso p:nth-child(2), .progreso1 p:nth-child(2){
+        font-size: 1rem;
+    }
+    .dFlex, .form{
+        width: 600px;
+    }
+    .dFlex div{
+        width: 290px;
+    }
+    input[type="text"]{
+        width: 100%;
+    }
+    .flex{
+        display: flex;
+        justify-content: space-between;
+    }
+    .flex div{
+        width: 280px;
+    }
+    .select-box, .selected-option{
+        width: 100%;
+    }
+    .back, .create{
+        width: 298px;
+    }
+}
+

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html id="sombra">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>servicios</title>
+    <link rel="stylesheet" href="assets/css/servicios/barraProgreso.css">
+    <link rel="stylesheet" href="assets/css/servicios/secciones.css">
+    <link rel="stylesheet" href="assets/css/responsive/serviciosResponsive.css">
+    <link rel="stylesheet" href="assets/css/servicios/en/en.css">
+    <link rel="stylesheet" href="assets/css/servicios/es/es.css">
+    <link rel="stylesheet" href="assets/css/servicios/pt/pt.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/i18next@21.6.10/i18next.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-i18next@1.2.1/jquery-i18next.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/i18next-browser-languagedetector/7.1.0/i18nextBrowserLanguageDetector.min.js"></script>
+
+    <script src="assets/serviciosJS/js/i18nServicios.js"></script>
+</head>
+
+<body>
+    <main>
+
+        <section id="sec1Popup">
+            <header class="headerSec1">
+                <h1 data-i18n="progressBar.title">Request Quote</h1>
+            </header>
+
+            <div class="barraProgreso">
+                <div class="progreso">
+                    <p>1</p>
+                    <p data-i18n="progressBar.route">Route</p>
+                </div>
+                <div class="separador"></div>
+                <div class="progreso">
+                    <p>2</p>
+                    <p data-i18n="progressBar.vehicle">Vehicle</p>
+                </div>
+                <div class="separador"></div>
+                <div class="progreso">
+                    <p>3</p>
+                    <p data-i18n="progressBar.details">Details</p>
+                </div>
+                <div class="separador"></div>
+                <div class="progreso">
+                    <p>4</p>
+                    <p data-i18n="progressBar.payment">Payment</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="sec2" id="sec2Popup">
+            <header class="dflexHeader">
+                <h2 class="h2ArticleSeleccion" data-i18n="service.title">Select service</h2>
+                <span><button class="btnDetails detailService" id="detailService"><img src="assets/img/details.png"
+                            alt=""></button></span>
+            </header>
+
+            <div class="contentFlex">
+                <figure class="btnSeleccion">
+                    <img src="assets/img/Frame.png" alt="">
+                    <figcaption>
+                        <span data-i18n="exclusive.exclusivev">Exclusive</span><br>
+                        <span class="precio">$100</span>
+                        <span class="pAbsolute" data-i18n="time.time">Pickup Time 10:30/10:40</span>
+                    </figcaption>
+                </figure>
+
+                <figure class="btnSeleccion">
+                    <img src="assets/img/Frame.png" alt="">
+                    <figcaption>
+                        <span data-i18n="exclusive.shared">Shared</span><br>
+                        <span class="precio">$50</span>
+                    </figcaption>
+                </figure>
+
+
+            </div>
+        </section>
+
+        <section class="pasajeros">
+            <header>
+                <h2 class="h2Pasajeros" data-i18n="passenger.passengers">Select passengers</h2>
+            </header>
+
+            <div class="cantidadPasajeros">
+                <button class="btnPassengers">1</button>
+                <button class="btnPassengers">2</button>
+                <button class="btnPassengers">3</button>
+                <button class="btnPassengers">4</button>
+                <button class="btnPassengers">5</button>
+                <button class="btnPassengers">6</button>
+            </div>
+        </section>
+
+        <section class="sec3">
+            <header class="dflexHeader">
+                <h2 class="h2ArticleSeleccion" data-i18n="passenger.pets">Add pets</h2>
+                <span><button class="btnDetails detailPets" id="detailPets"><img src="assets/img/details.png"
+                            alt=""></button></span>
+            </header>
+
+            <form action="#" class="formPets">
+                <input type="checkbox" name="addPets" id="addPets">
+                <label class="petsLabel" for="addPets" data-i18n="passenger.travelPets">I am traveling with pets</label>
+                <span><img src="assets/img/pet.png" alt=""></span>
+            </form>
+
+            
+                <button class="luggage" id="luggage">
+                    <span>
+                        <img src="assets/img/maletaPet.png" alt="">
+                    </span>
+                    <span data-i18n="passenger.luggage">
+                        View Included Luggage 
+                    </span>
+                </button>
+            
+        </section>
+
+        <section class="sec4" id="sec4Popup">
+            <header>
+                <h2 class="h2Sec4" data-i18n="passenger.notes">Notes</h2>
+            </header>
+            <form action="#">
+                <textarea name="notas" id="notas" cols="30" rows="10"></textarea>
+
+                <div class="enlaces">
+                    <a href="index.html" class="back" data-i18n="btn.linkBack">Back</a>
+                    <a href="crear-cuenta.html" class="proceed" data-i18n="btn.linkProceed">Proceed</a>
+                </div>
+            </form>
+        </section>
+
+        <div class="popupService" id="popupService">
+            <button id="cerrarService" class="cerrar"><img src="assets/img/cerrar.png" alt=""></button>
+
+            <div class="dFlex">
+                <div class="pT">
+                    <img src="assets/img/taxi-van1.png" alt="">
+                </div>
+                <article>
+
+                    <header>
+                        <h2 class="h2Info" data-i18n="popuService.title1">Shared transport</h2>
+                    </header>
+                    <p class="pInfo" data-i18n="popuService.pInfo1">You will share this transports with
+                        other passengers. Please consider that
+                        after we pick you up, we might pick
+                        other passengers.</p>
+                    <p class="pInfo2" data-i18n="popuService.pInfo1_2">Estimated travel time: 1 - 1.5 hrs</p>
+
+                </article>
+            </div>
+
+            <div class="dFlex">
+                <div class="pT">
+                    <img src="assets/img/auto.png" alt="">
+                </div>
+                <article>
+
+                    <header>
+                        <h2 class="h2Info" data-i18n="popuService.title2">Exclusive transport</h2>
+                    </header>
+                    <p class="pInfo" data-i18n="popuService.pInfo2_2">The van is just for you and your
+                        companions you won't have to wait for
+                        other passengers.</p>
+                    <p class="pInfo2" data-i18n="popuService.pInfo2_3">Estimated travel time: 40 min - 1 hr</p>
+                </article>
+            </div>
+
+            <button class="moreInfo" data-i18n="popuService.close">
+                Close & continue purchase
+            </button>
+
+            <a href="#" class="moreInfo2" data-i18n="popuService.check">
+                Check our Terms & Conditions
+            </a>
+        </div>
+
+
+
+
+
+        <div class="popupPets" id="popupPets">
+            <button id="cerrarPets" class="cerrar"><img src="assets/img/cerrar.png" alt=""></button>
+
+            <div class="dFlex">
+
+                <div class="pT">
+                    <img src="assets/img/balance.png" alt="">
+                </div>
+                <article>
+
+                    <header>
+                        <h2 class="h2Info" data-i18n="popupPets.title1">It's law</h2>
+                    </header>
+                    <p class="pInfo" data-i18n="popupPets.pInfo1p">By law, we can't allow pets on the front seat.</p>
+
+                </article>
+            </div>
+
+            <div class="dFlex">
+
+                <div class="pT">
+                    <img src="assets/img/dog.png" alt="">
+                </div>
+                <article>
+
+                    <header>
+                        <h2 class="h2Info" data-i18n="popupPets.title2">10kg dogs</h2>
+                    </header>
+                    <p class="pInfo" data-i18n="popupPets.pInfo2p">Dogs of up to 10kg can be seated, if they are buckled with a harness.</p>
+
+                </article>
+            </div>
+
+            <div class="dFlex">
+
+                <div class="pT">
+                    <img src="assets/img/pet.png" alt="">
+                </div>
+                <article>
+
+                    <header>
+                        <h2 class="h2Info" data-i18n="popupPets.title3">Over 10kg</h2>
+                    </header>
+                    <p class="pInfo" data-i18n="popupPets.pInfo3p">Dogs weighting over 10kg, along with other pets, must remain in their kennel or
+                        cage.</p>
+
+                </article>
+            </div>
+
+            <button class="moreInfo" data-i18n="popupPets.close">
+                Close & continue purchase
+            </button>
+
+            <a href="#" class="moreInfo2" data-i18n="popupPets.check">
+                Check our Terms & Conditions
+            </a>
+        </div>
+
+
+
+        <div class="popupLuggage" id="popupLuggage">
+            <button id="cerrarLuggage" class="cerrar"><img src="assets/img/cerrar.png" alt=""></button>
+            <section>
+                <header>
+                    <h2 class="sharedTransport luggageh2" data-i18n="popupLuggage.title1">Shared transport</h2>
+                </header>
+                <p class="pInfoLuggage" data-i18n="popupLuggage.pInfo1">Each passenger is allowed one of each of these luggage. If you need more
+                    luggage, you can book an additional seat, or switch to an Exclusive Transport.</p>
+
+            </section>
+
+
+            <section class="mbSecPopupLuggage">
+                <header>
+                    <h2 class="luggageh2select" data-i18n="popupLuggage.title2">Select only one luggage for shared transport</h2>
+                </header>
+
+                <form action="#">
+                <div class="dFlex">
+                    <article class="alinear">
+                        <header class="bgGray">
+                            <h3 class="luggageH3" data-i18n="popupLuggage.title2_2">Checked Baggage</h3>
+                        </header>
+                        <figure class="figure">
+                            <img class="imgLugggage" src="assets/img/luggage.png" alt="">
+                            <figcaption class="figcaption">
+                                <p data-i18n="popupLuggage.pInfo2_2">27kg - One</p>
+                            </figcaption>
+                        </figure>
+                    </article>
+
+                    <article class="alinear">
+                        <header class="bgGray">
+                            <h3 class="luggageH3" data-i18n="popupLuggage.title2_3">Cabin Baggage</h3>
+                        </header>
+                        <figure class="figure">
+                            <img class="imgLugggage" src="assets/img/suitcase.png" alt="">
+                            <figcaption class="figcaption">
+                                <p data-i18n="popupLuggage.pInfo2_3">7kg - One</p>
+                            </figcaption>
+                        </figure>
+                    </article>
+
+                    <article class="alinear">
+                        <header class="bgGray">
+                            <h3 class="luggageH3" data-i18n="popupLuggage.title2_4">Personal Item</h3>
+                        </header>
+                        <figure class="figure">
+                            <img class="imgLugggage" src="assets/img/backpack.png" alt="">
+                            <figcaption class="figcaption">
+                                <p data-i18n="popupLuggage.pInfo2_4">4kg - One</p>
+                            </figcaption>
+                        </figure>
+                    </article>
+                    
+                </div>
+            </form>
+
+            </section>
+
+            <section class="mbSecPopupLuggage">
+                <header>
+                    <h2 class="luggageh2" data-i18n="popupLuggage.title3">Exclusive transport</h2>
+                </header>
+                <p class="pInfoLuggage" data-i18n="popupLuggage.pInfo3">The entire group can fill the capacity of the van. It is forbidden to carry
+                    luggage on the seats where passengers are seated.</p>
+     
+                <article>
+                    <header>
+                        <h3 class="luggageh2select" data-i18n="popupLuggage.title3_2">Allowed to add luggage until the van capacity is filled.</h3>
+                    </header>
+                </article>
+
+                <form action="">
+                <div class="dFlex">
+                    <article class="alinear">
+                        <header class="bgGray">
+                            <h3 class="luggageH3" data-i18n="popupLuggage.title2_2">Checked Baggage</h3>
+                        </header>
+                        <figure class="figure">
+                            <img class="imgLugggage" src="assets/img/luggage.png" alt="">
+                            <figcaption class="figcaption">
+                                <p data-i18n="popupLuggage.pInfo2_2">27kg - Until full</p>
+                            </figcaption>
+                        </figure>
+                    </article>
+
+                    <article class="alinear">
+                        <header class="bgGray">
+                            <h3 class="luggageH3" data-i18n="popupLuggage.title2_3">Cabin Baggage</h3>
+                        </header>
+                        <figure class="figure">
+                            <img class="imgLugggage" src="assets/img/suitcase.png" alt="">
+                            <figcaption class="figcaption">
+                                <p data-i18n="popupLuggage.pInfo2_3">7kg - Until full</p>
+                            </figcaption>
+                        </figure>
+
+                    </article>
+
+                    <article class="alinear">
+                        <header class="bgGray">
+                            <h3 class="luggageH3" data-i18n="popupLuggage.title2_4">Personal Item</h3>
+                        </header>
+                        <figure class="figure">
+                            <img class="imgLugggage" src="assets/img/backpack.png" alt="">
+                            <figcaption class="figcaption">
+                                <p data-i18n="popupLuggage.pInfo2_4">4kg - Until full</p>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </div>
+            </form>
+
+
+
+            </section>
+
+            <button class="moreInfo" data-i18n="popupLuggage.close">
+                Close & continue purchase
+            </button>
+
+            <a href="#" class="moreInfo2" data-i18n="popupLuggage.check">
+                Check our Terms & Conditions
+            </a>
+        </div>
+
+        <button id="eeuu">
+            Unite state
+        </button>
+
+        <button id="spain">
+            spain
+        </button>
+
+        <button id="br">
+            portuguese
+        </button>
+
+    </main>
+
+    <script src="assets/serviciosJS/js/servicios.js"></script>
+    <script src="assets/serviciosJS/js/passengers.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+@media screen and (min-width: 992px) and (max-width: 1930px){
+    body.pt{
+        & .toAirport {
+            transform: translate(100%);
+        }
+        & .slider{
+            width: 113px;
+        }
+        & .pAbsolute{
+            font-size: .80rem;
+        }
+    }
+}
+@media screen and (min-width: 425px) and (max-width: 990px) {
+    body.pt {
+        & .toAirport {
+            transform: translate(102%);
+        }
+        & .slider {
+            width: 97px;
+        }
+        & .pAbsolute{
+            font-size: .80rem;
+            width: 100%;
+        }
+    }
+}

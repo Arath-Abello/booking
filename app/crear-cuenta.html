@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create an account</title>
+    <link rel="stylesheet" href="assets/css/crear-cuenta/barraProgreso.css">
+    <link rel="stylesheet" href="assets/css/crear-cuenta/sec2.css">
+    <link rel="stylesheet" href="assets/css/responsive/crearCuentaResponsive.css">
+    <link rel="stylesheet" href="assets/css/crear-cuenta/en/en.css">
+    <link rel="stylesheet" href="assets/css/crear-cuenta/es/es.css">
+    <link rel="stylesheet" href="assets/css/crear-cuenta/pt/pt.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/i18next@21.6.10/i18next.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-i18next@1.2.1/jquery-i18next.min.js"></script>
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/i18next-browser-languagedetector/7.1.0/i18nextBrowserLanguageDetector.min.js"></script>
+
+<script src="assets/crear-cuenta/js/i18nCuenta.js"></script>
+</head>
+
+<body>
+    <main>
+        <section id="sec1" class="sec1">
+            <header class="headerSec1">
+                <h1>Create an account</h1>
+            </header>
+
+            <div class="barraProgreso">
+                <div class="progreso">
+                    <p>1</p>
+                    <p data-i18n="progressBar.route">Route</p>
+                </div>
+                <div class="separador"></div>
+                <div class="progreso">
+                    <p>2</p>
+                    <p data-i18n="progressBar.vehicle">Vehicle</p>
+                </div>
+                <div class="separador"></div>
+                <div class="progreso">
+                    <p>3</p>
+                    <p data-i18n="progressBar.details">Details</p>
+                </div>
+                <div class="separador"></div>
+                <div class="progreso">
+                    <p>4</p>
+                    <p data-i18n="progressBar.payment">Payment</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="sec2">
+            <header>
+                <h2 class="sec2h2" data-i18n="create.title">Create an account</h2>
+            </header>
+
+            <p class="sec2p" data-i18n="create.pInfo">Have you travelled with us before? If so, you can log in with your email.</p>
+
+            <div class="dFlex">
+                <a href="login.html" class="logueo">
+                    <div class="contenedorLogueo">
+                        <img src="assets/img/email.png" alt="">
+                        <article>
+                            <header>
+                                <h3 class="sec2h3" data-i18n="create.loginTitle">Log in with your email</h3>
+                            </header>
+                            <p class="pArticle" data-i18n="create.pInfoLogin">Log in with your email for a faster experience.</p>
+                        </article>
+                    </div>
+                </a>
+    
+                <a href="registro-usuario.html" class="logueo">
+                    <div class="contenedorLogueo">
+                        <img src="assets/img/user.png" alt="">
+                        <article>
+                            <header>
+                                <h3 class="sec2h3" data-i18n="create.createTitle">Create an account</h3>
+                            </header>
+                            <p class="pArticle" data-i18n="create.pInfoCreate">Registration is necessary to handle
+                                the reservation correctly.</p>
+                        </article>
+                    </div>
+                </a>
+            </div>
+
+            <a href="servicios.html" class="back" data-i18n="create.backService">Back to service selection</a>
+        </section>
+
+        <button id="eeuu">
+            Unite state
+        </button>
+
+        <button id="spain">
+            spain
+        </button>
+
+        <button id="br">
+            portuguese
+        </button>
+    </main>
+</body>
+
+</html>
